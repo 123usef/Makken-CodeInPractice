@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Makeen_Patch03_Day11", "Makeen_Patch03_Day11\Makeen_Patch03_Day11.csproj", "{DA04777D-53FC-4A21-9FC3-A5F3313ECC1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA04777D-53FC-4A21-9FC3-A5F3313ECC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA04777D-53FC-4A21-9FC3-A5F3313ECC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA04777D-53FC-4A21-9FC3-A5F3313ECC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA04777D-53FC-4A21-9FC3-A5F3313ECC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B40F9EB-1CAF-4C38-A0A9-74EC05CF208A}
+	EndGlobalSection
+EndGlobal
