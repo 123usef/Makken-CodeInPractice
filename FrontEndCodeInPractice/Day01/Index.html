@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <!-- <style>
+         /* by tage name */
+        a{
+            text-decoration: none;
+            font-size: 5rem;
+        }
+        /* classname */
+        .headerSection{
+            background-color: yellow;
+        }
+        /* ID */
+        #Username{
+              background-color: #060606;  
+        }
+
+    </style> -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+    <body>
+
+        <!-- السلام عليكم و رحمة الله و بركاته -->
+        <!-- 
+           Semantic tags ==> a way of Structuring our WebSite 
+           header ==> <header>  </header>
+           nav  ==> <nav> </nav>     
+           main ==> <main> </main>
+           
+           section ==> <section> </section>
+           division ==> <div> </div>
+           footer ==> <footer> </footer>
+        =-======================
+        Different type of Text
+        ----------------------
+        headings Tags 
+        h1 ==> h6 (h1 most bigger one (Title)) 
+        paragraph ==> p
+        anchor Tag ==> <a href=" " > </a>
+        absoulte Path  ==>
+
+        relative Path ==> 
+        image ===> img
+        -->
+         
+         <!-- <header>
+            <div>
+                <h1>hello From Joonguini WebSite</h1>      
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quos.</p>
+                <h3>Makeen is great </h3>
+            </div>      
+             <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, impedit.</h2>
+             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, doloribus.</h3>
+             <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, est.</h4>
+             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, officia?</h5>
+             <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, maxime!</h6>   
+            <nav>
+
+            </nav>
+            hello from a header Section
+            hello within the Header
+         </header>
+       <nav>
+            hello from nav
+       </nav>
+       hhhhhh -->
+       <header class="headerSection">
+      <div>
+        <img src="./assets/images/pic.png" alt="logo Brand Image" width="150px" height="150px"  />
+        <h3>  JoonguiniAcademy</h3> 
+        <p> <b> JoonguiniAcademy </b></p>
+        <p> <strong> JoonguiniAcademy </strong></p>
+        <p> <i> JoonguiniAcademy </i></p>
+        <p> <u> JoonguiniAcademy </u> </p>
+        <p> <del> JoonguiniAcademy </del> </p>
+        <p>  Lorem ipsum dolor sit amet consectetur  <span id=""> adipisicing elit. Voluptas aliquid at </span> vel numquam obcaecati voluptates, unde soluta necessitatibus. Eum perspiciatis, ipsum illo asperiores laudantium autem officia soluta saepe, consequuntur facere unde sapiente rem cum? Fuga reprehenderit minus itaque voluptas animi.</p>
+        <p> 10<sup>2</sup>  </p>
+        <p> CO<sub>2</sub>  </p>
+
+      </div>
+        <nav>
+            <!-- <a href="https://www.google.com/" target="_blank">Go here </a> -->
+            <a href="./Aboutus.html"> About Us</a>
+            <a href="../hello.html"> Hello</a>
+            <a href="./assets/assest.html"> assets</a>
+        </nav>
+       </header>
+
+       <main id="m1-pt2" >
+          <div>
+            <h3 style="color: coral; text-decoration: underline;  " >Who Is yousif ?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                . Debitis consequuntur deserunt dolorum natus veniam placeat
+                 iure! Laborum illo cum voluptatibus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cumque totam quae, veritatis quod id. Ullam laborum aspernatur enim. Ab quasi repellendus reiciendis in, suscipit repudiandae ea provident dolore iste.
+                </p>
+          </div>
+          <div>
+            
+            <h3>My Work </h3>
+            <table border="1px solid black">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Project Image</th>
+                        <th>Visit the Project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>asyncrouns Clock for Gravity</td>
+                        <td> <img src="./assets/images/pic.png" width="150px" height="150px" alt=""> </td>
+                        <td><a href="./Aboutus.html"> visit now  </a> </td>
+                    </tr>
+                    <tr>
+                        <td>asyncrouns Clock for Gravity</td>
+                        <td  >  <img src="./assets/images/pic.png" alt="" width="100px" height="100px" > </td>
+                        <td><a href="./Aboutus.html"> visit now </a> </td>
+                    </tr>
+                    <tr>
+                        <td>asyncrouns Clock for Gravity</td>
+                        <td> <img src="./assets/images/pic.png" width="90px" height="90px" alt=""> </td>
+                        <td><a href="./Aboutus.html"  > visit now </a> </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+       </main>
+       <!-- horizontal Line  -->
+       <hr>
+       <!--  breakLine -->
+       <br> <br><br>
+       <!-- 
+            key Value Pair
+            key : value
+            Username : value
+
+        -->
+       <form>
+           
+            <label for="Username"  >UserName</label>
+            <input type="text"  id="Username" placeholder="UserName"  name="Username" required />
+
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="abc@gmail.com" name = "Email" >
+            <br>
+            <label for="Password">Password</label>
+            <input type="password" id="Password">
+            <br>
+            <label for="Gender"> Gender :  </label>
+            <input type="radio" id="Gender" name="gender" value="Male" > Male
+            <input type="radio" id="Gender" name="gender"  value="Female" > Female
+            <br>
+            <label for="intro">Description About Yourself</label>
+            <textarea name="intro" id="intro" cols="20" rows="20" placeholder="Write A paragraph about your self"></textarea>
+            <br>
+            <label for="Date">Date Of Birth</label>
+            <input type="date" name="Date" id="Date">
+            <br>
+            <Label for="Theme" > Profile Theme : </Label>
+            <input type="color" name="Theme" id="Theme">
+            <br>
+            <label for="profileimg"> Select Profile Image :  </label>
+            <input type="file" name="profileimg" id="profileimg" accept=".pdf .png">
+        <br>
+            <label for="Country"> Your Country </label>
+            <select name="Country" id="Country">
+                  <option  >Select Country</option>  
+                  <option value="Oman"> Sultant Oman </option>  
+                  <option value="Egypt"> Egypt </option>  
+                  <option value="Jordon"> Jordon </option>  
+                  <option value="UAE"> UAE </option>  
+                  <option value="Keuwit"> Keuwit </option>  
+
+            </select>
+            <br>
+            <label for="tech"> Technologies</label>
+            <input type="checkbox" name="tech" value="html" id="tech1">html 
+            <input type="checkbox" name="tech" value="css" id="tech2">css 
+            <input type="checkbox" name="tech" value="js" id="tech3">js 
+            <input type="checkbox" name="tech" value="react" id="tech4">react 
+            <br>
+            <input type="submit"> 
+            <input type="reset" >
+        </form>
+        <button>go there </button>
+   <footer class="headerSection">
+    <a href="emailto:yousifm836@gmail.com"  >hello </a>
+   </footer>
+    </body>
+</html>
