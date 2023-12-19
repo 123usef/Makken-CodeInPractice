@@ -1,0 +1,85 @@
+/* Configuratration */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: auto;
+}
+.sec-1{
+    background-color: #200E3A;
+    color: #ffffff; /*Font Size*/
+    height: 60px;
+    /* padding-top: 15px; */
+}
+.nav-Content{
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-Content a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 15px;
+
+}
+.nav-Content img {
+    width:  50px;
+    height: 50px;
+    margin-bottom: 3%;
+
+    /* margin-top:10px ; */
+}
+/* --------------------- */
+
+.sec-2{
+    height: 300px;
+    background-color: #3887BE;
+}
+
+.sec-2-flx{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.header-pt1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.header-pt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: auto; */
+    text-align: center;
+}
+
+.personal img{
+    width: 150px;
+    height: 150px;
+
+}
+
+.txt-main{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.small{
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
