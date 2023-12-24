@@ -1,0 +1,18 @@
+$colorNav : #124578 ;
+$secondaryColor : #224577 ;
+.sec1{
+    @include DetectColor(yellow);
+    background-color: $colorNav;
+    font-size: 2rem;
+    display: flex;
+    p {
+          background-color: $secondaryColor ;  
+    }  
+}
+ 
+@mixin DetectColor($colooor){
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $colooor;
+}

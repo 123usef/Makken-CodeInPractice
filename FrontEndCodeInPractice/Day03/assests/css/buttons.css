@@ -1,0 +1,21 @@
+.btn{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    /* padding: ; */
+    border: 2px solid black;
+    color: black;
+}
+
+a:link{
+    color: red;
+}
+.btn:hover{
+    width: 100px;
+    background-color: #10236f;
+}
+
+.btn :visited{
+    color: coral;
+}

@@ -1,0 +1,67 @@
+/* 
+/* all selector */
+*{
+    /* background-color : #636e72; */
+   /* margin-top: 10px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   margin-right: 10px; */
+    /* margin: 0; */
+    /* margin : top left bottom right  */
+    /* margin: 10px 10px;
+    margin : 10px 20px 30px 40px ; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*
+body{
+     
+       Colors :
+       --------
+       by name ==> it's Not preferable  
+       by rgb ==> red green blue 
+        hexadecimals ==> #fffffff
+        rgba(30, 30, 10, 0.3) ==> a stands For  alpha 
+        */
+    /* background-color: aqua; */
+    /* background-color: rgb(100, 30, 150); */
+
+    /* background-color : #636e72; */
+    /* background-color: ; 
+}*/
+
+.sec-1{
+   height: 50px ; /* by Default 0  */
+    /* width: 50px ; by default 100% */
+    background-color: #200E3A;
+    color: #ffffff;
+    /* font-size: 150px ; */
+}
+
+/* nested Selection  */
+/* .sec-1 .para-1{
+    font-size: 150px;
+} */
+/* p{
+    font-size: 16px;
+}  */
+
+/* ------------------------------------ */
+
+/* .personal{
+    display: inline-block;
+    border: 1px solid black;
+    width: 40%;
+    height: 40%;
+} */
+
+/* .personal{
+    float: left;
+    border: 1px dashed black;
+    margin-left: 3%;
+} */

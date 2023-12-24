@@ -1,0 +1,10 @@
+.sec1 {
+  
+  @DetectColor (yellow);
+  background-color: #124578;
+  font-size: 2rem;
+  display: flex;
+}
+.sec1 p {
+  background-color: #224577;
+}/*# sourceMappingURL=index.css.map */

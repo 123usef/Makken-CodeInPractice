@@ -1,0 +1,38 @@
+.cycle{
+    width: 10vw;
+    height: 25vh;
+    margin: 25% auto;
+    border: 2px dashed purple ; 
+    transform: rotate(270deg)  ;
+    background-color: aqua;
+    border-radius: 50%;
+    transition: 5s;
+    /* animation-name:CircleRound ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; */
+    animation: CircleRound 5s ease-in-out 3s infinite  ;
+}
+@keyframes CircleRound {
+    0%{
+        transform: rotate(90deg);
+    }
+    25%{
+        transform: rotate(180deg);
+
+    }
+    50%{
+        transform: rotate(270deg);
+        
+    }
+    75%{
+        transform: rotate(360deg);
+
+    }
+    100%{
+        transform: rotate(90deg);
+
+    }
+    
+}
