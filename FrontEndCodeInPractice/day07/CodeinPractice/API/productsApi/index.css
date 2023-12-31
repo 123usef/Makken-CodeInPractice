@@ -1,0 +1,31 @@
+#products{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color:transparent
+}
+
+.item{
+    width:23%;
+    height: 300px;
+    margin:20px 0px;
+    border:2px solid grey;
+    text-align: center;
+    background-color: beige;
+}
+.item h3 {
+    height: 20%;
+    overflow:hidden;
+}
+.item img {
+    width:90%;
+    height:65%
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+a:active{
+    color: black;
+}
