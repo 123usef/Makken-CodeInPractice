@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Todo
+
+<h3>
+    Create New Todo
+</h3>
+
+<form asp-action="Create">
+    @* <input hidden value="@Model.Id" /> *@
+    <label asp-for="Name" class="form-label" ></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <label asp-for="Description" class="form-label"></label>
+    <input asp-for="Description" class="form-control" />
+
+    <label asp-for="CreatedDate" class="form-label"></label>
+    <input asp-for="CreatedDate"  class="form-control" />
+
+    <input type="submit" value="Add todo" class="btn btn-primary" />
+</form>
+
+

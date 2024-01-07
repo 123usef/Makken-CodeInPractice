@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "cdnjs",
+      "library": "tailwindcss@2.2.19",
+      "destination": "wwwroot/tailwindcss/",
+      "files": [
+        "tailwind.min.css",
+        "base.min.css",
+        "components.min.css"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "animateCSS@1.2.2",
+      "destination": "wwwroot/lib/animateCSS/"
+    }
+  ]
+}
