@@ -1,0 +1,47 @@
+﻿@model List<Department>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2> Departments List </h2>
+<a  asp-action="Create" class="btn btn-primary"> Create New Department</a>
+@if (Model.Count() > 0)
+ {
+           
+<table class="table table-striped table-hover">
+    <thead>
+        <tr> 
+            <td >code </td>
+            <td >Name </td>
+            <td > DateCreated </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+            {
+                <tr>
+                    
+                    <td> @item.Code </td>  
+                    
+                    <td> @item.Name </td>
+                    <td> @item.CreatedAt </td>
+                    <td> <a  asp-controller = "Department"  asp-action="Details" asp-route-id="@item.Id" class="btn btn-sucess"> Details  </a></td>
+                    <td> <a asp-controller="Department" asp-action="Update" class="btn btn-info"> Update  </a> </td>
+                    <td> <a asp-controller="Department" asp-action="Delete" class="btn btn-danger"> Delete  </a> </td>
+                </tr>
+            }
+
+    </tbody>
+    </table>
+}
+else
+{
+   <div class="card bg-dark text-light">
+        <h2>  No Departments Available </h2>
+   </div>
+}
+
+
+

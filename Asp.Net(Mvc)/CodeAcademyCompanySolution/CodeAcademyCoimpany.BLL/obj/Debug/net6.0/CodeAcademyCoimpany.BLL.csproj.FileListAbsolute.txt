@@ -1,0 +1,16 @@
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\bin\Debug\net6.0\CodeAcademyCoimpany.BLL.deps.json
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\bin\Debug\net6.0\CodeAcademyCoimpany.BLL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\bin\Debug\net6.0\CodeAcademyCoimpany.BLL.pdb
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\bin\Debug\net6.0\CodeAcademyCompany.DAL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\bin\Debug\net6.0\CodeAcademyCompany.DAL.pdb
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.csproj.AssemblyReference.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.AssemblyInfoInputs.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.AssemblyInfo.cs
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.csproj.CoreCompileInputs.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.sourcelink.json
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.csproj.CopyComplete
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\refint\CodeAcademyCoimpany.BLL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\CodeAcademyCoimpany.BLL.pdb
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCoimpany.BLL\obj\Debug\net6.0\ref\CodeAcademyCoimpany.BLL.dll

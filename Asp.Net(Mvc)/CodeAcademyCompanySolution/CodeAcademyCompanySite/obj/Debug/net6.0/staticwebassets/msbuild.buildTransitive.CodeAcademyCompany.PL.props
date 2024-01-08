@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CodeAcademyCompany.PL.props" />
+</Project>
