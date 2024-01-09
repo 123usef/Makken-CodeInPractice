@@ -18,7 +18,10 @@ namespace CodeAcademyCompanySite
             options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<IDepartmentReposatory, DepartmentRepository>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             
+            //
+
             //builder.Services.AddTransient<DepartmentRepository>();
             //builder.Services.AddSingleton<>
 
@@ -33,6 +36,7 @@ namespace CodeAcademyCompanySite
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

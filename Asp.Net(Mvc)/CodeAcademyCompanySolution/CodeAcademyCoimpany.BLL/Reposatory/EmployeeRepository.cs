@@ -9,42 +9,21 @@ using System.Threading.Tasks;
 
 namespace CodeAcademyCoimpany.BLL.Reposatory
 {
-    public class EmployeeRepository : IEmployeeRepository
+    public class EmployeeRepository : GenericRepository<Employee>, IEmployeeRepository
     {
-        private readonly ApplicationDbContext _context; //==> EMPTY 
+        private readonly ApplicationDbContext _context;
 
-        public EmployeeRepository(ApplicationDbContext context)
+        public EmployeeRepository(ApplicationDbContext context) :base(context)
         {
-            //_context = new ApplicationDbContext()
-            _context = context; //
+            _context = context;
         }
 
+       
 
-        public int Create(Employee dep)
+        public IEnumerable<Employee> address(string name)
         {
-            _context.Employees.Add(dep);
-            return _context.SaveChanges();
-        }
-
-        public int Delete(Employee dep)
-        {
-            _context.Employees.Remove(dep);
-            return _context.SaveChanges();
-        }
-
-        public Employee Get(int id)
-           => _context.Employees.Find(id);
-
-
-
-        public IEnumerable<Employee> GetAll()
-             => _context.Employees.ToList();
-
-
-        public int Update(Employee dep)
-        {
-            _context.Employees.Update(dep);
-            return _context.SaveChanges();
+           var employees = _context.Employees.Where(e => e.Name == name);
+            return employees;
         }
     }
 }

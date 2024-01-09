@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeAcademyCompany.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+187d9c025b67c809a3766ed882937570623d1f2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeAcademyCompany.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeAcademyCompany.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

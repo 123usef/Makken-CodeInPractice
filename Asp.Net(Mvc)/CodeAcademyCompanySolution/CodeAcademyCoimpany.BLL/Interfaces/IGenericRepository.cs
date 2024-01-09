@@ -7,9 +7,14 @@ using System.Threading.Tasks;
 
 namespace CodeAcademyCoimpany.BLL.Interfaces
 {
-    public interface IDepartmentReposatory :IGenericRepository<Department>
+    public interface IGenericRepository<T>
     {
-        // 5 actions ==> Get All , get , create ,  delete, update
-       
+        IEnumerable<T> GetAll();
+        T Get(int id);
+        // 
+        int Create(T item);
+        int Update(T item);
+        int Delete(T item);
+
     }
 }

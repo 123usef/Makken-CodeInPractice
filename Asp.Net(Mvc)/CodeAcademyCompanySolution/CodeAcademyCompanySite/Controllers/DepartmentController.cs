@@ -41,8 +41,37 @@ namespace CodeAcademyCompany.PL.Controllers
             //{
             //    return BadRequest();
             //}
+            if (ModelState.IsValid)
+            {
             _departmentRepo.Create(dep);
 
+            return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+
+        public IActionResult Update(int id)
+        {
+            var dep = _departmentRepo.Get(id);
+            return View(dep);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Department dep)
+        {
+            if(ModelState.IsValid)
+            {
+            _departmentRepo.Update(dep);
+            return RedirectToAction("Index");
+            }
+            return View(dep);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var dep = _departmentRepo.Get(id);
+            _departmentRepo.Delete(dep);
             return RedirectToAction("Index");
         }
 
