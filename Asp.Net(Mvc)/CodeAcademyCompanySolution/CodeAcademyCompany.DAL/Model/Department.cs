@@ -16,6 +16,9 @@ namespace CodeAcademyCompany.DAL.Model
         [MaxLength(50)] // nvarchar(max)
         public string Name { get; set; }
 
-        public DateTime CreatedAt { get; set; } = DateTime.Now; 
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        //Navigational Property many
+        ICollection<Employee> Employes { get; set; } = new HashSet<Employee>();
     }
 }

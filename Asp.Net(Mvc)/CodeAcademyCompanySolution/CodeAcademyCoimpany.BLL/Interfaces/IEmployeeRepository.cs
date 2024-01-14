@@ -9,7 +9,9 @@ namespace CodeAcademyCoimpany.BLL.Interfaces
 {
     public interface IEmployeeRepository :IGenericRepository<Employee>
     {
-        IEnumerable<Employee> address(string name);
+        //IEnumerable<Employee> address(string name);
+
+        IEnumerable<Employee> Search(string name);
        
     }
 }

@@ -1,0 +1,19 @@
+﻿@model Department
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+<label asp-for="Code" class="form-Label"></label>
+<input asp-for="Code" class="form-control" />
+<span asp-validation-for="Code" class="text-danger"></span>
+
+
+<label asp-for="Name" class="form-Label"></label>
+<input asp-for="Name" class="form-control" />
+<span asp-validation-for="Name" class="text-danger"></span>
+
+
+<label asp-for="CreatedAt" class="form-Label"></label>
+<input asp-for="CreatedAt" class="form-control" />
+<span asp-validation-for="CreatedAt" class="text-danger"></span>

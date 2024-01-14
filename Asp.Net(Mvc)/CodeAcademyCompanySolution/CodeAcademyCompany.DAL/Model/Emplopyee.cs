@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,5 +29,18 @@ namespace CodeAcademyCompany.DAL.Model
 
         [DataType(DataType.Currency)]
         public decimal Salary { get; set; }
+
+        //[ForeignKey("Department")]
+        
+        public int? DepartmentId { get; set; } // restricted
+
+        //Navigational Property of type one
+        // OnDelete ==> Cascade == > remove the relationed Data
+        //          ==> Restrict ==>  no remove for the princible Data
+        //          ==> SetNull ==> set Null for the Deleted Attribute 
+                  //==> DoNothing 
+
+        public Department Department { get; set; }
+
     }
 }

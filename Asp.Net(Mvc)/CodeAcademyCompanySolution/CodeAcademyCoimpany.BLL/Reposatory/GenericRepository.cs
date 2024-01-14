@@ -1,6 +1,7 @@
 ﻿using CodeAcademyCoimpany.BLL.Interfaces;
 using CodeAcademyCompany.DAL.Context;
 using CodeAcademyCompany.DAL.Model;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
@@ -40,8 +41,19 @@ namespace CodeAcademyCoimpany.BLL.Reposatory
 
 
         public IEnumerable<T> GetAll()
-             => _context.Set<T>().ToList();
+        {
+            if(typeof(T) == typeof(Employee))
+            {
+               return (IEnumerable<T>)_context.Employees.Include(e=>e.Department).ToList();
+                   
+            }
+            else { 
+                  return  _context.Set<T>().ToList();
+            
+            }
 
+
+        }
 
         public int Update(T item)
         {

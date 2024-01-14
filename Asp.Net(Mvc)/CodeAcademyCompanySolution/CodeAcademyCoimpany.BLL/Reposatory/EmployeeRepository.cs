@@ -18,12 +18,18 @@ namespace CodeAcademyCoimpany.BLL.Reposatory
             _context = context;
         }
 
-       
 
-        public IEnumerable<Employee> address(string name)
+
+        //public IEnumerable<Employee> address(string name)
+        //{
+        //   var employees = _context.Employees.Where(e => e.Name == name);
+        //    return employees;
+        //}
+
+        public IEnumerable<Employee> Search(string name)
         {
-           var employees = _context.Employees.Where(e => e.Name == name);
-            return employees;
+            var emp = _context.Employees.Where(w=>w.Name.ToLower().Contains(name.ToLower())).ToList();
+            return emp;
         }
     }
 }

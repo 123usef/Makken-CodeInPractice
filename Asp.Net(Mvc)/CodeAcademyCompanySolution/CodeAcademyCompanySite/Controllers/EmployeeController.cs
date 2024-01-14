@@ -8,17 +8,29 @@ namespace CodeAcademyCompany.PL.Controllers
     {
 
         private readonly IEmployeeRepository _EmployeeRepo;
+        private readonly IDepartmentReposatory _departmentrepo;
 
         //IEmployeeReposatory depo = new EmployeeRepository();
-        public EmployeeController(IEmployeeRepository Employeerepo)
+        public EmployeeController(IEmployeeRepository Employeerepo , IDepartmentReposatory departmentrepo)
         {
 
             _EmployeeRepo = Employeerepo;
+            _departmentrepo = departmentrepo;
         }
-        public IActionResult Index()
+
+
+        public IActionResult Index(string search)
         {
-            var deps = _EmployeeRepo.GetAll();
-            return View(deps);
+            IEnumerable<Employee> emps;
+            if (string.IsNullOrEmpty(search))
+            {
+                emps = _EmployeeRepo.GetAll();
+            }
+            else
+            {
+                emps = _EmployeeRepo.Search(search);
+            }
+           return View(emps);
         }
         public IActionResult Details(int? id)
         {
@@ -32,6 +44,7 @@ namespace CodeAcademyCompany.PL.Controllers
         }
         public IActionResult Create()
         {
+            ViewBag.Departments = _departmentrepo.GetAll();
             return View();
         }
         [HttpPost]
@@ -50,6 +63,7 @@ namespace CodeAcademyCompany.PL.Controllers
         public IActionResult Update(int id)
         {
             var emp = _EmployeeRepo.Get(id);
+            ViewBag.Departments = _departmentrepo.GetAll();
             return View(emp);
         }
 
@@ -64,7 +78,13 @@ namespace CodeAcademyCompany.PL.Controllers
             return View(emp);
         }
 
-        public IActionResult Delete(int id)
+        public IActionResult Delete( int id)
+        {
+            var emp = _EmployeeRepo.Get(id);
+            return View(emp);
+        }
+        [HttpPost , ActionName("Delete")]
+        public IActionResult DeleteConfirm(int id)
         {
             var emp = _EmployeeRepo.Get(id);
             _EmployeeRepo.Delete(emp);

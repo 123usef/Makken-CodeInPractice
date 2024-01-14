@@ -17,6 +17,10 @@ namespace CodeAcademyCompany.PL.Controllers
         }
         public IActionResult Index()
         {
+
+            // ViewBag || ViewdData
+            ViewBag.massage = "Hello from Action";
+            ViewData["msg"] = "Hello from ViewData";
            var deps =  _departmentRepo.GetAll();
             return View(deps);
         }
@@ -37,14 +41,11 @@ namespace CodeAcademyCompany.PL.Controllers
         [HttpPost]
         public IActionResult Create(Department dep)
         {
-            //if(dep == null)
-            //{
-            //    return BadRequest();
-            //}
+           
             if (ModelState.IsValid)
             {
             _departmentRepo.Create(dep);
-
+                TempData["success"] = "Added Successfully";
             return RedirectToAction("Index");
             }
             return View();

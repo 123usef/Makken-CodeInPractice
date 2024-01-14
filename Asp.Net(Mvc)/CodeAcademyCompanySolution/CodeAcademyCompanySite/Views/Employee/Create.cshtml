@@ -1,0 +1,55 @@
+﻿@model Employee
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var departments = new SelectList(ViewBag.Departments ,  "Id" , "Name");
+}
+
+<h2> Add New Employee </h2>
+
+<form asp-action="Create">
+    @* <div asp-validation-summary="All"></div> *@
+
+    @* <partial name="PartialView/CreateUpdatePartial" /> *@
+    
+<label asp-for="Name" class="form-Label"></label>
+<input asp-for="Name" class="form-control" />
+<span asp-validation-for="Name" class="text-danger"></span>
+
+
+<label asp-for="City" class="form-Label"></label>
+<input asp-for="City" class="form-control" />
+<span asp-validation-for="City" class="text-danger"></span>
+
+
+<label asp-for="age" class="form-Label"></label>
+<input asp-for="age" class="form-control" />
+<span asp-validation-for="age" class="text-danger"></span>
+
+<label asp-for="Email" class="form-Label"></label>
+<input asp-for="Email" class="form-control" />
+<span asp-validation-for="Email" class="text-danger"></span>
+
+
+<label asp-for="Salary" class="form-Label"></label>
+<input asp-for="Salary" class="form-control" />
+<span asp-validation-for="Salary" class="text-danger"></span>
+
+
+<label asp-for="Department"  class="form-label" ></label>
+    <select class="form-control" asp-for="DepartmentId" asp-items="@departments">
+    <options value="@null" >--Select Department--</options>
+
+</select>
+
+    <input type="submit" class="btn btn-primary" />
+    | <a asp-action="Index" class="btn btn-dark"> Back to List</a>
+
+</form>
+
+@section ClientSideValidation
+{
+    <partial name="_ValidationScriptsPartial" />
+}

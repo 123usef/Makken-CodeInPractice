@@ -15,13 +15,14 @@ namespace CodeAcademyCompanySite
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<ApplicationDbContext>(
-            options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+            );
 
             builder.Services.AddScoped<IDepartmentReposatory, DepartmentRepository>();
-            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             
-            //
-
+            
+            
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             //builder.Services.AddTransient<DepartmentRepository>();
             //builder.Services.AddSingleton<>
 
