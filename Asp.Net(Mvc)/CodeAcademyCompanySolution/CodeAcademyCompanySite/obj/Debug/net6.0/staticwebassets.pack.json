@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\CodeAcademyCompany.PL.bundle.scp.css"
     },
     {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\083c6b18-2753-4956-bd5c-65b52a6067d6Image.JPG",
+      "PackagePath": "staticwebassets\\Files\\Images\\083c6b18-2753-4956-bd5c-65b52a6067d6Image.JPG"
+    },
+    {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\3f5102e1-e573-47e4-902b-ea88f90e0c4bImage",
+      "PackagePath": "staticwebassets\\Files\\Images"
+    },
+    {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\4ba839af-e357-4423-8236-3dc3d7a0d152Untitled.png",
+      "PackagePath": "staticwebassets\\Files\\Images\\4ba839af-e357-4423-8236-3dc3d7a0d152Untitled.png"
+    },
+    {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\94d4d826-8396-47ae-a9ab-4ac83e02c27aImage",
+      "PackagePath": "staticwebassets\\Files\\Images"
+    },
+    {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\d746c6b1-29e3-4243-b71d-62b68f0e326eUntitled.png",
+      "PackagePath": "staticwebassets\\Files\\Images\\d746c6b1-29e3-4243-b71d-62b68f0e326eUntitled.png"
+    },
+    {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\Files\\Images\\placeholder.webp",
+      "PackagePath": "staticwebassets\\Files\\Images\\placeholder.webp"
+    },
+    {
       "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

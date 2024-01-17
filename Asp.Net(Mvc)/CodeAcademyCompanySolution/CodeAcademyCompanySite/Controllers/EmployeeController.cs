@@ -1,21 +1,29 @@
-﻿using CodeAcademyCoimpany.BLL.Interfaces;
+﻿using AutoMapper;
+using CodeAcademyCoimpany.BLL.Interfaces;
 using CodeAcademyCompany.DAL.Model;
+using CodeAcademyCompany.PL.Helpers;
+using CodeAcademyCompany.PL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace CodeAcademyCompany.PL.Controllers
 {
     public class EmployeeController : Controller
     {
 
-        private readonly IEmployeeRepository _EmployeeRepo;
-        private readonly IDepartmentReposatory _departmentrepo;
+        //private readonly IEmployeeRepository _EmployeeRepo;
+        //private readonly IDepartmentReposatory _departmentrepo;
+        private readonly IUnitofWork _unitofWork;
+        private readonly IMapper _mapper;
 
         //IEmployeeReposatory depo = new EmployeeRepository();
-        public EmployeeController(IEmployeeRepository Employeerepo , IDepartmentReposatory departmentrepo)
+        public EmployeeController(/*IEmployeeRepository Employeerepo , IDepartmentReposatory departmentrepo*/ IUnitofWork unitofWork , IMapper mapper)
         {
 
-            _EmployeeRepo = Employeerepo;
-            _departmentrepo = departmentrepo;
+            //_EmployeeRepo = Employeerepo;
+            //_departmentrepo = departmentrepo;
+            _unitofWork = unitofWork;
+            _mapper = mapper;
         }
 
 
@@ -23,12 +31,13 @@ namespace CodeAcademyCompany.PL.Controllers
         {
             IEnumerable<Employee> emps;
             if (string.IsNullOrEmpty(search))
-            {
-                emps = _EmployeeRepo.GetAll();
+            {  
+                emps = _unitofWork.EmployeeRepository.GetAll();
+                //var Mappedemps = _mapper.Map<Employee, EmployeeVM>(emps);
             }
             else
             {
-                emps = _EmployeeRepo.Search(search);
+                emps = _unitofWork.EmployeeRepository.Search(search);
             }
            return View(emps);
         }
@@ -38,23 +47,41 @@ namespace CodeAcademyCompany.PL.Controllers
             {
                 return BadRequest();
             }
-            var emp = _EmployeeRepo.Get(id.Value);
+            var emp = _unitofWork.EmployeeRepository.Get(id.Value);
             return View(emp);
 
         }
         public IActionResult Create()
         {
-            ViewBag.Departments = _departmentrepo.GetAll();
+            ViewBag.Departments = _unitofWork.DepartmentReposatory.GetAll();
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Employee emp)
+        public IActionResult Create(EmployeeVM emp)
         {
-            //if(dep == null)
-            //{
-            //    return BadRequest();
-            //}
-            _EmployeeRepo.Create(emp);
+            ///if(dep == null)
+            ///{
+            ///    return BadRequest();
+            ///}
+            /*
+               Type Casting EmployeeVm --> Employee 
+             
+             */
+
+            /// Manaual Mapping 
+            ///Employee MappedEmp = new Employee()
+            ///{
+            ///    Name = emp.Name,
+            ///    City = emp.City,
+            ///    Email =emp.Email , 
+            ///    age= emp.age ,
+            ///    Salary = emp.Salary ,
+            ///    DepartmentId = emp.DepartmentId,
+
+            ///};
+            emp.ImageUrl = DocumentConf.DocumentUpload(emp.Image, "Images");
+            var MappedEmp = _mapper.Map<EmployeeVM , Employee>(emp);
+            _unitofWork.EmployeeRepository.Create(MappedEmp);
 
             return RedirectToAction("Index");
         }
@@ -62,17 +89,18 @@ namespace CodeAcademyCompany.PL.Controllers
 
         public IActionResult Update(int id)
         {
-            var emp = _EmployeeRepo.Get(id);
-            ViewBag.Departments = _departmentrepo.GetAll();
+            var emp = _unitofWork.EmployeeRepository.Get(id);
+            ViewBag.Departments = _unitofWork.DepartmentReposatory.GetAll();
             return View(emp);
         }
 
         [HttpPost]
-        public IActionResult Update(Employee emp)
+        public IActionResult Update(EmployeeVM emp)
         {
             if (ModelState.IsValid)
             {
-                _EmployeeRepo.Update(emp);
+                var MappedEmp = _mapper.Map<EmployeeVM, Employee>(emp);
+                _unitofWork.EmployeeRepository.Update(MappedEmp);
                 return RedirectToAction("Index");
             }
             return View(emp);
@@ -80,14 +108,15 @@ namespace CodeAcademyCompany.PL.Controllers
 
         public IActionResult Delete( int id)
         {
-            var emp = _EmployeeRepo.Get(id);
+            var emp = _unitofWork.EmployeeRepository.Get(id);
             return View(emp);
         }
         [HttpPost , ActionName("Delete")]
         public IActionResult DeleteConfirm(int id)
         {
-            var emp = _EmployeeRepo.Get(id);
-            _EmployeeRepo.Delete(emp);
+            var emp = _unitofWork.EmployeeRepository.Get(id);
+            DocumentConf.DcoumentDelete(emp.ImageUrl, "Images");
+            _unitofWork.EmployeeRepository.Delete(emp);
             return RedirectToAction("Index");
         }
 

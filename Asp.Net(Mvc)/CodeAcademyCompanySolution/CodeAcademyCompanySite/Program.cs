@@ -1,7 +1,11 @@
 using CodeAcademyCoimpany.BLL.Interfaces;
 using CodeAcademyCoimpany.BLL.Reposatory;
 using CodeAcademyCompany.DAL.Context;
+using CodeAcademyCompany.DAL.Model;
+using CodeAcademyCompany.PL.Model_Profile;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CodeAcademyCompanySite
 {
@@ -17,16 +21,24 @@ namespace CodeAcademyCompanySite
             builder.Services.AddDbContext<ApplicationDbContext>(
             options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
+            builder.Services.AddAutoMapper(m=>m.AddProfile(new EmployeeProfile()));
+            builder.Services.AddAutoMapper(m => m.AddProfile(new DepartmentProfile()));
 
-            builder.Services.AddScoped<IDepartmentReposatory, DepartmentRepository>();
-            
-            
-            
-            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IUnitofWork, UnitOfWork>();
+            //builder.Services.AddScoped<IDepartmentReposatory, DepartmentRepository>();
+            //builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             //builder.Services.AddTransient<DepartmentRepository>();
             //builder.Services.AddSingleton<>
 
-            var app = builder.Build();
+            //builder.Services.AddScoped<UserManager<ApplicationUser>>();
+            //builder.Services.AddScoped<SignInManager<ApplicationUser>>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            
+            builder.Services.AddAuthentication();
+
+
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

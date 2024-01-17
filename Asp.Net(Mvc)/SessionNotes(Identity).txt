@@ -1,0 +1,160 @@
+
+- Security (Authentication - Authorization)
+===========================================
+Step 0 - Identification (Registration) 
+     	=>  Have a Account at Web App 
+
+
+Step 1 - Authentication 
+	=> 1. Who Are You? Login (Username(email), Password)
+ 	=> 2. Where You Come?
+		- Local 
+		- Active Directory 
+		- External Server "External Login (Facebook, Google and etc..)" 
+		- Federated Server (Souq -> Amazon)
+
+
+Step 2 - Authorization 
+	=> What Can I Do? 
+    		Roles (Each Group Of Users have a Specified Role) 
+
+=============================================
+
+
+- Security at ASP.NET Core => Using Microsoft Identity Package
+
+
+ - Identification(Registeration) -> UserManager (IdentityUser)
+     	1. Create User (Sign Up)
+	2. Update User 
+	3. Delete User 
+	4. Read User Data
+	5. Confirm Account 
+
+
+ - Authentication -> SignInManager (IdentityUser)
+	1. Sign In 
+	2. Sign Out 
+	3. IsSigned 
+	4. Reset Password 
+	5. Two Factor Authentication 
+	6. OTP Authentication 
+	7. External Login (Facebook, Google) 
+
+
+ - Authorization -> RoleManager(IdentityRole)
+	1. Create Role 
+	2. Update Role
+	3. Delete Role
+
+------------------------------------------------------
+Steps :
+--------
+Install inside DataAccessLayers 
+-Microsoft.Asp.NetCore.Identity.EntityFrameWorkCore
+
+-------
+NoNeedTo:
+-----------
+
+//public DbSet<IdentityUser> Users { get; set; }
+//public DbSet<IdentityRole> Roles { get; set; }
+
+just Inherit from :
+----------------------
+IdentityDbContext
+---------------------
+then AddMigration and Update Database and You Will Find UserSTables
+-------------------------------------------
+then We Will Go to the Pl because we Don't Need Repos we have a ready Made sERVICES 
+------------------------------------------
+Create AuthController || AccountController
+public AccountController(UserManager<ApplicationUser> userManager , SignInManager<ApplicationUser> signInManager<ApplicationUser> signInManager)
+----------------------------------
+inside program.cs
+//services.AddScopped<UserManager<ApplicationUser>>();
+//services.AddScopped<SignInManager<ApplicationUser>>();
+//services.AddScopped<RoleManager<ApplicationUser>>();
+instead :
+//for the Services of adding 
+services.AddIdentity<ApplicationUser , IdentityRole>(options=>
+	options.Password
+)
+.AddEntityFrameWorkStore<ApplicationDbContext>()
+.AddDefaultTokenProviders();
+
+
+//instead of addscope  
+
+services.AddAuthentication(CookieAuthenticationDefault.AuthenticationSchema)
+.AddCookie(options=>
+{
+	options.loginPath = "Account/Login";
+	options.AccessDeniedPath = "Home/Error";
+
+}
+);
+
+--------------------------------
+We Don't Have Index :
+----------------------
+go and Create ApplicationUser : IdentityUser<ApplicationUser>
+We Have Login || Register || ForgetPassword || 
+-------------------------------
+public IActionResult Register(){
+	return View()
+}
+[HttpPost]
+public async Task<IActionResult> Register(RegisterVm model){
+	if(Model.IsValid){
+		var user  = new IdentityUser(){
+		USERNAME = model.Email.split('@')[0],
+		Email = model.Email , 
+		IsAgree = isAgree
+		
+	}
+var result  = await  _userManager.CreateAsync(user , model.Password);
+	if(result.Succeeded)
+{
+	return redirectToAction('Login')
+}			
+	}
+	return View(model)
+}
+
+public IActionRsult Login(LoginVM model){
+	if(ModfelState.isvALID){
+
+	VAR USER = _userManger.FindByEmailAsync(model.Email);
+if(user is not null){
+	var flage = _userManager.CheckPasswordAsync(user , model.Password);
+	if -->flage 
+		var result = await _signinManager.PasswordSignInAsync(user , model.Password , rememberMe , false)
+	if(result.Succeded){
+	redirecttoAction(index)
+}	
+}	
+}
+
+
+
+
+
+app.useAuthntication()
+app.useAuthorization()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

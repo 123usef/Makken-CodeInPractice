@@ -1,4 +1,5 @@
-﻿@model Employee
+﻿
+@model EmployeeVM
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,7 +10,7 @@
 
 <h2> Add New Employee </h2>
 
-<form asp-action="Create">
+<form asp-action="Create" enctype="multipart/form-data">
     @* <div asp-validation-summary="All"></div> *@
 
     @* <partial name="PartialView/CreateUpdatePartial" /> *@
@@ -37,6 +38,9 @@
 <input asp-for="Salary" class="form-control" />
 <span asp-validation-for="Salary" class="text-danger"></span>
 
+
+<label asp-for="Image"  class="form-label"></label>
+<input  asp-for="Image" class="form-control"  />
 
 <label asp-for="Department"  class="form-label" ></label>
     <select class="form-control" asp-for="DepartmentId" asp-items="@departments">

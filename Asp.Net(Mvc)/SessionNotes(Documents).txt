@@ -1,0 +1,36 @@
+namespace Demo.pl.Helpers
+{
+    public static class DocumentSetting
+    {                               // it will take file itself and folderName
+        public static string UploadFile(IFormFile file , string folderName)
+        {
+            //1. GetLocated FolderPath
+            //string folderPath = Directory.GetCurrentDirectory() + "\\wwwroot\\files" + folderName;
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "\\wwwroot\\files", folderName);
+            //2. getFilename and makeit unique
+            string filename =  $"{Guid.NewGuid()}{file.FileName}";
+            //3. get filePath 
+            string filepath = Path.Combine( folderPath , filename );
+            //4.Save file as streams : [DataPerTime]
+            using var fs = new FileStream(filepath, FileMode.Create);
+            // 5.file it self to fileStream 
+            file.CopyTo(fs);
+
+            return filename;
+
+        }
+        public static void DeleteFile(string fileName , string folderName)
+        {
+            //get the path
+            if(fileName is not null && folderName is not null)
+            {
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "\\wwwroot\\files", folderName, fileName);
+            if (File.Exists(filePath))
+                File.Delete(filePath);
+
+
+            }
+
+        }   
+    }
+}
