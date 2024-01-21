@@ -18,7 +18,8 @@ namespace CodeAcademyCompany.DAL.Context
         }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<ApplicationUser> User { get; set; }
+
+        //public DbSet<ApplicationUser> User { get; set; }
         //public DbSet<IdentitUsery> User { get; set; }
         //public DbSet<IdentityRole> UserRole { get; set; }
     }

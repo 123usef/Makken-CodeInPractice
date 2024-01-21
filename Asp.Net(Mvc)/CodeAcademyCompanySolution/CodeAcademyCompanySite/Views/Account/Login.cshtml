@@ -1,40 +1,35 @@
-﻿@model RegisterVm
+﻿@model LoginVm
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_AuthLayout.cshtml";
 }
 
-<h1>Register</h1>
+<h1>Login</h1>
+
 
 <div class="main-w3layouts wrapper">
 	<h1>Creative SignUp Form</h1>
 	<div class="main-agileinfo">
 		<div class="agileits-top">
-			<form asp-action="Register">
+			<form asp-action="Login">
 				<div asp-validation-summary="All"></div>
-				<input class="text" asp-for="Fname" placeholder="First name" required="">
-				<span asp-validation-for="Fname"></span>
-				<input class="text" asp-for="Lname" placeholder="Last name" required="">
-				<span asp-validation-for="Lname"></span>
-
+			
 				<input class="text email" asp-for="Email" placeholder="Email" required="">
-				<span asp-validation-for="Email"></span>
+			
 
 				<input class="text" asp-for="Password" placeholder="Password" required="">
-				<span asp-validation-for="Password"></span>
-				<input class="text w3lpass" asp-for="ConfirmPassword" placeholder="Confirm Password" required="">
-				<span asp-validation-for="ConfirmPassword"></span>
+			
 
-				@* <input type="radio" value="Male"  asp-for="" /> Male 
+				@* <input type="radio" value="Male"  asp-for="" /> Male
 				<input type="radio" value="Female" /> *@
 				<div class="wthree-text">
 					<label class="anim">
-						<input asp-for="isAgree" class="checkbox" >
-						<span>I Agree To The Terms & Conditions</span>
+						<input asp-for="RememberMe" class="checkbox">
+						<span>remember Me</span>
 					</label>
 					<div class="clear"> </div>
 				</div>
-				<input type="submit" value="SIGNUP">
+				<input type="submit" value="Login">
 			</form>
 			<p>Don't have an Account? <a href="#"> Login Now!</a></p>
 		</div>
@@ -57,5 +52,3 @@
 		<li></li>
 	</ul>
 </div>
-
-				

@@ -3,10 +3,12 @@ using CodeAcademyCoimpany.BLL.Interfaces;
 using CodeAcademyCoimpany.BLL.Reposatory;
 using CodeAcademyCompany.DAL.Model;
 using CodeAcademyCompany.PL.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeAcademyCompany.PL.Controllers
 {
+    [Authorize]
     public class DepartmentController : Controller
     {
         private readonly IDepartmentReposatory _departmentRepo;

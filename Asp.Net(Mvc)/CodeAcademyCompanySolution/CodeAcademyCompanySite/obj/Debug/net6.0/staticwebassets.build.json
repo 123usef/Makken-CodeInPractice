@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/olbvR3IUzGyAlk4VH7mK0v+MqkxP5YG2v3z0oT6za8=",
+  "Hash": "nJTNz8/7Na96hMlPBZW74+/jCzewLCM74JIiWJLv1K0=",
   "Source": "CodeAcademyCompany.PL",
   "BasePath": "_content/CodeAcademyCompany.PL",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CodeAcademyCompany.PL.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\css\\Auth.css",
+      "SourceId": "CodeAcademyCompany.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\",
+      "BasePath": "_content/CodeAcademyCompany.PL",
+      "RelativePath": "css/Auth.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Auth.css"
     },
     {
       "Identity": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\css\\site.css",

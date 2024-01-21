@@ -1,4 +1,4 @@
-namespace Demo.pl.Helpers
+	namespace Demo.pl.Helpers
 {
     public static class DocumentSetting
     {                               // it will take file itself and folderName
@@ -11,9 +11,11 @@ namespace Demo.pl.Helpers
             string filename =  $"{Guid.NewGuid()}{file.FileName}";
             //3. get filePath 
             string filepath = Path.Combine( folderPath , filename );
-            //4.Save file as streams : [DataPerTime]
+            
+         //4.Save file as streams : [DataPerTime]
             using var fs = new FileStream(filepath, FileMode.Create);
-            // 5.file it self to fileStream 
+            
+         // 5.file it self to fileStream 
             file.CopyTo(fs);
 
             return filename;

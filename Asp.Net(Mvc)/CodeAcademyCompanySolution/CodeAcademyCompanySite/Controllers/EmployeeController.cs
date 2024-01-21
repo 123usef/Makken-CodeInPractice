@@ -3,12 +3,14 @@ using CodeAcademyCoimpany.BLL.Interfaces;
 using CodeAcademyCompany.DAL.Model;
 using CodeAcademyCompany.PL.Helpers;
 using CodeAcademyCompany.PL.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace CodeAcademyCompany.PL.Controllers
 {
-    public class EmployeeController : Controller
+	[Authorize]
+	public class EmployeeController : Controller
     {
 
         //private readonly IEmployeeRepository _EmployeeRepo;

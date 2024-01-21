@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\Files\\Images\\placeholder.webp"
     },
     {
+      "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\css\\Auth.css",
+      "PackagePath": "staticwebassets\\css\\Auth.css"
+    },
+    {
       "Id": "D:\\Makeen-Ptach3\\CodeInPractice\\Asp.Net(Mvc)\\CodeAcademyCompanySolution\\CodeAcademyCompanySite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

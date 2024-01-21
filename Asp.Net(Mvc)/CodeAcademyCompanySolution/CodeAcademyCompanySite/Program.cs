@@ -3,9 +3,11 @@ using CodeAcademyCoimpany.BLL.Reposatory;
 using CodeAcademyCompany.DAL.Context;
 using CodeAcademyCompany.DAL.Model;
 using CodeAcademyCompany.PL.Model_Profile;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using NuGet.Protocol.Plugins;
 
 namespace CodeAcademyCompanySite
 {
@@ -25,6 +27,7 @@ namespace CodeAcademyCompanySite
             builder.Services.AddAutoMapper(m => m.AddProfile(new DepartmentProfile()));
 
             builder.Services.AddScoped<IUnitofWork, UnitOfWork>();
+            #region UnNeeded Imports
             //builder.Services.AddScoped<IDepartmentReposatory, DepartmentRepository>();
             //builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             //builder.Services.AddTransient<DepartmentRepository>();
@@ -32,13 +35,23 @@ namespace CodeAcademyCompanySite
 
             //builder.Services.AddScoped<UserManager<ApplicationUser>>();
             //builder.Services.AddScoped<SignInManager<ApplicationUser>>();
+            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //builder.Services.AddAuthentication(); 
+            #endregion
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            
-            builder.Services.AddAuthentication();
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+                
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options=>
+                {
+                    options.LoginPath = "Account/Login";
+                    options.AccessDeniedPath = "Home/Error";                  
+                });
 
-
-			var app = builder.Build();
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
