@@ -1,4 +1,5 @@
 ﻿using CodeAcademyCompany.DAL.Model;
+using CodeAcademyCompany.PL.Helpers;
 using CodeAcademyCompany.PL.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -73,6 +74,7 @@ namespace CodeAcademyCompany.PL.Controllers
         {
             if(ModelState.IsValid)
             {
+				//Manual Mapping
                 var User = new ApplicationUser()
                 {
                     //UserName = model.Fname +model.Lname,
@@ -116,7 +118,7 @@ namespace CodeAcademyCompany.PL.Controllers
 				{
 					var flag = await _userManager.CheckPasswordAsync(user, model.Password );
 					if (flag)
-					{
+					{					// Generate Token ==> Unique Default Token Generator bta3 el dotnet 
 						 var result = await _signinMaganer.PasswordSignInAsync(user , model.Password , model.RememberMe , false );
 						if(result.Succeeded)
 						{
@@ -136,5 +138,51 @@ namespace CodeAcademyCompany.PL.Controllers
 
 			return View(model);
 		}
-    }
+
+		public new async Task<IActionResult> SigOut()
+		{
+			await _signinMaganer.SignOutAsync();
+			return View("Login");
+		}
+
+		#region ForgetPassword
+		public IActionResult ForgetPassword()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> ForgetPassword(string Email) {
+			if (ModelState.IsValid)
+			{
+				var user = await _userManager.FindByEmailAsync (Email);
+				if(user is not null)
+				{
+					var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+					var resetLink = Url.Action("ResetPassword", "Account", new { email = user.Email , token=token}, Request.Scheme);
+					var em = new Email()
+					{
+						To = user.Email,
+						title = "Reset Password",
+						Body = resetLink
+
+					};
+					//Email Configuration Pasword Function will be Called here
+					//EmailCOnf.ResetPasswordEmail(em);
+					return RedirectToAction("EmailSent");
+				}
+				ModelState.AddModelError(String.Empty, "No User Found With this Email");
+			
+			}
+			ModelState.AddModelError(string.Empty, "Email is not Valid");
+
+			return View(Email);
+		}
+
+		public IActionResult EmailSent()
+		{
+			return View();
+		}
+		#endregion
+	}
 }

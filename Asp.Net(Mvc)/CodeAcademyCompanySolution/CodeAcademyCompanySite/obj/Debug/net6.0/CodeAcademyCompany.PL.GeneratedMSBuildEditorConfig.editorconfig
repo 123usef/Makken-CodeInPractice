@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompanySite
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/EmailSent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFbWFpbFNlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

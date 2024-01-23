@@ -1,0 +1,127 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CodeAcademyCompany.PL
+build_property.RootNamespace = CodeAcademyCompany.PL
+build_property.ProjectDir = D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompanySite\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompanySite
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/EmailSent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFbWFpbFNlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Department/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Department/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Department/PartialView/CreateUpdatePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxQYXJ0aWFsVmlld1xDcmVhdGVVcGRhdGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Department/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/PartialView/CreateUpdatePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcUGFydGlhbFZpZXdcQ3JlYXRlVXBkYXRlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/PartialView/DetailDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcUGFydGlhbFZpZXdcRGV0YWlsRGVsZXRlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Employee/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Shared/ButtonPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJ1dHRvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Makeen-Ptach3/CodeInPractice/Asp.Net(Mvc)/CodeAcademyCompanySolution/CodeAcademyCompanySite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-atlpsuxnf7

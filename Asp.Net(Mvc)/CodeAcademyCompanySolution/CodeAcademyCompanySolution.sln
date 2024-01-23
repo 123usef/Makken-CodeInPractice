@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademyCompany.PL", "CodeAcademyCompanySite\CodeAcademyCompany.PL.csproj", "{33D66444-CA45-4B2A-ADBB-33FA6BEC49A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAcademyCompany.PL", "CodeAcademyCompanySite\CodeAcademyCompany.PL.csproj", "{33D66444-CA45-4B2A-ADBB-33FA6BEC49A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademyCompany.DAL", "CodeAcademyCompany.DAL\CodeAcademyCompany.DAL.csproj", "{C275BDD9-A538-4B5B-B44F-E5EF73980F02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAcademyCompany.DAL", "CodeAcademyCompany.DAL\CodeAcademyCompany.DAL.csproj", "{C275BDD9-A538-4B5B-B44F-E5EF73980F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademyCoimpany.BLL", "CodeAcademyCoimpany.BLL\CodeAcademyCoimpany.BLL.csproj", "{B486372A-7A52-412F-8316-431DB39FF94D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAcademyCoimpany.BLL", "CodeAcademyCoimpany.BLL\CodeAcademyCoimpany.BLL.csproj", "{B486372A-7A52-412F-8316-431DB39FF94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademyApi", "CodeAcademyApi\CodeAcademyApi.csproj", "{110D7BFA-A712-48EF-816B-68AE4D445435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B486372A-7A52-412F-8316-431DB39FF94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B486372A-7A52-412F-8316-431DB39FF94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B486372A-7A52-412F-8316-431DB39FF94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110D7BFA-A712-48EF-816B-68AE4D445435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110D7BFA-A712-48EF-816B-68AE4D445435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110D7BFA-A712-48EF-816B-68AE4D445435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110D7BFA-A712-48EF-816B-68AE4D445435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,13 @@
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\bin\Debug\net8.0\CodeAcademyCompany.DAL.deps.json
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\bin\Debug\net8.0\CodeAcademyCompany.DAL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\bin\Debug\net8.0\CodeAcademyCompany.DAL.pdb
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.csproj.AssemblyReference.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.AssemblyInfoInputs.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.AssemblyInfo.cs
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.csproj.CoreCompileInputs.cache
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.sourcelink.json
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\refint\CodeAcademyCompany.DAL.dll
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\CodeAcademyCompany.DAL.pdb
+D:\Makeen-Ptach3\CodeInPractice\Asp.Net(Mvc)\CodeAcademyCompanySolution\CodeAcademyCompany.DAL\obj\Debug\net8.0\ref\CodeAcademyCompany.DAL.dll

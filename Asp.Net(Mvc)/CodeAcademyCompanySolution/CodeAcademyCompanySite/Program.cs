@@ -18,7 +18,10 @@ namespace CodeAcademyCompanySite
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews(); //Mvc
+
+            //builder.Services.AddEndpointsApiExplorer(); //Api
+            //builder.Services.AddMvc(); Both Mvc And Api
 
             builder.Services.AddDbContext<ApplicationDbContext>(
             options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -40,9 +43,11 @@ namespace CodeAcademyCompanySite
 
             //builder.Services.AddAuthentication(); 
             #endregion
+
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+                
                 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options=>
@@ -66,6 +71,8 @@ namespace CodeAcademyCompanySite
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
