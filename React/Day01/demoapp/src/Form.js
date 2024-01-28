@@ -9,7 +9,7 @@ export default function Form() {
     setName(e.target.value)
  }
 
- 
+   
     return (
     <div className='container' > 
     <h2> Form Signup </h2>

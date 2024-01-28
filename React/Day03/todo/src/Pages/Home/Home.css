@@ -1,0 +1,11 @@
+.main-sec{
+    background-color: darkkhaki;
+    height: 70vh;
+
+}
+
+.custom{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 50%;
+}
