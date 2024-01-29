@@ -14,15 +14,17 @@ import DetailedTodo from './Pages/Todo/DetailedTodo/DetailedTodo';
 //routing Imports 
 import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
+import { useSelector } from 'react-redux';
 
-
-function App() {
+function App() {  
+  const lang  = useSelector((state) => state.lang);
   return (
   <>
-  <div className=''>
+  <div className='' dir={lang == "en" ? "ltr" :"rtl"}>
    <Router>
    <Navbar />
       <Routes>
+        
         <Route path='/' element={<Home />}  />
         <Route path='/listTodo' element={<TodoList />} />
         {/*  params through the Url is Accessed Through the useParams() --> hook   */}
