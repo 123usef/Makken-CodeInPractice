@@ -1,9 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import ChangeLang from '../../store/Action'
+import ChangeLang from '../../store/Action/LanguageAction/LanguageAction'
 export default function Navbar() {
-  const lang   = useSelector((state) =>state.lang)
+  const lang   = useSelector((state) =>state.language.lang)
   const dispatch = useDispatch();
   // ChangeLang(){
 

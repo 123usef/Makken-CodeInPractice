@@ -1,9 +1,13 @@
-// import {configureStore} from "@reduxjs/toolkit";
-import { configureStore } from '@reduxjs/toolkit' ;
-import LanguageReducer from './reducer' ;
+
+import { combineReducers, configureStore } from '@reduxjs/toolkit' ;
+import LanguageReducer from './Reducers/Languagereducer' ;
+import combinedReducers from './CombinedReducer';
+
 
 const store = configureStore({
-    reducer : LanguageReducer,
-})
+    reducer : combinedReducers,
+   
+  });
+// const store = createStore(LanguageReducer , composeWithDevTools())
 
 export default store ;

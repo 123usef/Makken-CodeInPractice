@@ -1,5 +1,6 @@
 const InitalState = {
-    lang : "en"
+    lang : "en",
+    conut:0
 }
 
 const  LanguageReducer = (state = InitalState , action) =>

@@ -17,7 +17,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import { useSelector } from 'react-redux';
 
 function App() {  
-  const lang  = useSelector((state) => state.lang);
+  const lang  = useSelector((state) => state.language.lang);
   return (
   <>
   <div className='' dir={lang == "en" ? "ltr" :"rtl"}>
