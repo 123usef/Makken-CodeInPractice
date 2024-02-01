@@ -1,0 +1,12 @@
+<div class="card mb-3">
+    <img src="assets/joonguini3.jpg" class="card-img-top" style="width:70%; height: auto;" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{UserValue.name}} || {{UserValue.age}}</h5>
+      <h6 class="card-text" > {{UserValue.Gender}} </h6>
+      <p class="card-text">{{UserValue.Describtion}}</p>
+      <ul>
+        <li *ngFor="let item of UserValue.skills">{{item}}</li>
+      </ul>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
