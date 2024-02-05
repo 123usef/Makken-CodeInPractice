@@ -1,0 +1,10 @@
+1-Componenets LifeCycle : 
+----------------------------
+ngOnChanges(){}
+ngOnInit(){}
+ngAfterViewInit(){}
+ngAfterDestroy(){}
+--------------------------------
+2-Componenets Interactions 
+---------------------------------
+3-Angular Services 

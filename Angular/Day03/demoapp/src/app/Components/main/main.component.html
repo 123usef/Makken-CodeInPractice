@@ -1,0 +1,37 @@
+<select name="category" class="form-control m-3 w-50" id="cat" [(ngModel)]="SelectedCategory"   >
+  <option *ngFor="let item of catList" [value]="item.id"    >{{item.Name}}</option>
+</select>
+
+<div class="card card">
+  <h3> SelectedCategory is : {{SelectedCategory}}  </h3>
+  <!-- <input #catinput type="number" placeholder="enter Category id" > -->
+  <button class="btn btn-dark"  (click)="ChangeCat()" >change Cat</button>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td >id</td>
+      <td >Product Name</td>
+      <td >Quantity</td>
+      <td >product Image</td>
+      <td >Price</td>
+    </tr>
+  </thead>
+  <tbody>
+<!-- <h1>{{hamada}}</h1> -->
+    <tr *ngFor="let item of prdlist">
+      <th >{{item.id}}</th>
+      <td>{{item.name}}</td>
+      <td> <img [src]="item.imgaeUrl" alt="product-img"> </td>
+      <td>{{item.Quantity}}</td>
+      <td>{{item.price}}</td>
+      <td> <input #QuantityInput type="number" class="form-control" placeholder="Enter Product Quntity" > </td>
+      <td> <button class="btn btn-warning" (click)="TotalPrice(item.price , QuantityInput.value )"> Buy</button> </td>
+    </tr> 
+  </tbody>
+</table>
+
+<div class="card ">
+  <h3>your total Price is : {{totalPrice}}</h3>
+</div>
