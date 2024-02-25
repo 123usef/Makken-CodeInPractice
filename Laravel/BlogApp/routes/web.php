@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //home Controller
-Route::get('/', [IndexController::class , 'Index']) -> name('index');
+// Route::get('/', [IndexController::class , 'Index']) -> name('index');
 // echo IndexController::class ;
 
-Route::get('/blogs',[IndexController::class , 'blogslist'])-> name('blogs');
+Route::get('/',[IndexController::class , 'Index'])-> name('index');
+Route::get('/posts/create' , [IndexController::class , 'create']) ->name('create');
+Route::post('/posts',[IndexController::class , 'store'])-> name('store');
 
+Route::get('/posts/{post}' , [IndexController::class , 'show']) ->name('show');
 
