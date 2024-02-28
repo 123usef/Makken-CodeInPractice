@@ -2,8 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Posts;
+// use App\Models\posts;
+
+use App\Models\posts;
 use Illuminate\Http\Request;
+
+use function PHPUnit\Framework\isEmpty;
+use function PHPUnit\Framework\isNull;
+
 // use ..\..\Models\posts;
 
 class IndexController extends Controller
@@ -17,15 +23,18 @@ class IndexController extends Controller
     // }
 
     public function index(){
-        
-        $generalposts = [
-            ['id' => 1 , 'name' => 'palastininen won inshallah' , 'postedby' => 'adel mahmoud' , 'createdat'=> '00:00:00 2024-08-01' ],
-            ['id' => 2 , 'name' => 'egyptions won against bal7a' , 'postedby' => 'ahmed ali ' , 'createdat'=> '00:00:00 2024-04-01' ],
-            ['id' => 3 , 'name' => 'yousif mohamed become the Presdient ' , 'postedby' => 'yousif mohamed' , 'createdat'=> '00:00:00 2045-01-01' ],
-            ['id' => 4 , 'name' => 'Minister of social health  ' , 'postedby' => 'Mona ' , 'createdat'=> '00:00:00 2028-02-01' ],
-        ];
+        // $dbPosts = posts::all();  
+        $dbposts= posts::all();
+        // dd($dbposts);
+        // $generalposts = [
+        //     ['id' => 1 , 'name' => 'palastininen won inshallah' , 'postedby' => 'adel mahmoud' , 'createdat'=> '00:00:00 2024-08-01' ],
+        //     ['id' => 2 , 'name' => 'egyptions won against bal7a' , 'postedby' => 'ahmed ali ' , 'createdat'=> '00:00:00 2024-04-01' ],
+        //     ['id' => 3 , 'name' => 'yousif mohamed become the Presdient ' , 'postedby' => 'yousif mohamed' , 'createdat'=> '00:00:00 2045-01-01' ],
+        //     ['id' => 4 , 'name' => 'Minister of social health  ' , 'postedby' => 'Mona ' , 'createdat'=> '00:00:00 2028-02-01' ],
+        // ];
+        // dd($dbPosts);
                     //view foldername.Viewname
-        return view('Posts.index',['posts' => $generalposts]);
+        return view('Posts.index',['posts' => $dbposts]);
     }
     public function create(){
         
@@ -44,6 +53,19 @@ class IndexController extends Controller
     }
     public function show($postId){
 
-        return 'hello from Detailed Page you have asked for post with id '. $postId;
+        // $getpost = posts::find($postId);
+        // $getpost = posts::where('id' , $postId)
+        //                     ->first()
+        //                     ->orderby();
+
+        $getpost = posts::findorfail($postId);
+
+        // dd($getpost);
+
+        // if(is_null($getpost)){
+        //     return to_route('index');
+        // }
+
+        return view('Posts.show' , [ 'post' => $getpost]);
     }
 }

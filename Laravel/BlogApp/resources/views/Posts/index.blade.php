@@ -13,9 +13,9 @@
     <div class="card h-100">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{$post['id']}}</h5>
-        <p class="card-text">{{$post['name'] }}</p>
-        <p class="card-subtext">{{$post['postedby']}}</p>
+        <h5 class="card-title">{{$post->title}}</h5>
+        <p class="card-text">{{$post->description }}</p>
+        <p class="card-subtext">{{$post->publishat}}</p>
     <div class="d-flex justify-content-between">
     <a href="{{route('show',$post['id'])}}" class="btn btn-warning">View</a>
     <!-- /posts/{{$post['id']}} -->
